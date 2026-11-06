@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdant | Eco Goods & Plant Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Notification Bar -->
+  <div class="top-announcement">
+    <div class="container announcement-content">
+      <span>🌿 Spring Earth Sale: Enjoy <strong>20% off</strong> all indoor plants with code <strong>EVERGREEN</strong></span>
+      <span class="announcement-badge">Free Shipping over $45</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-leaf">🌱</span>
+        <span class="logo-text">Verdant<span class="logo-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Search -->
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search eco products, plants...">
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#about" class="nav-link">Our Mission</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme" title="Toggle theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+
+        <!-- Cart Button -->
+        <button id="cart-btn" class="btn-cart" aria-label="Open Cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-text">Cart</span>
+          <span id="cart-count" class="cart-badge">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle" class="btn-icon mobile-only" aria-label="Toggle menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-tag">🌱 100% Sustainable & Handpicked</span>
+        <h1 class="hero-title">Bring Nature Home with Eco-Friendly Living</h1>
+        <p class="hero-subtitle">
+          Discover curated indoor plants, zero-waste home essentials, and organic botanical goods crafted with love for you and the planet.
+        </p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop Collection</a>
+          <a href="#about" class="btn btn-outline">Our Sustainability Story</a>
+        </div>
+        <div class="trust-metrics">
+          <div class="trust-item">
+            <span class="trust-icon">🪴</span>
+            <div>
+              <strong>15,000+</strong>
+              <small>Thriving Plants Shipped</small>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">♻️</span>
+            <div>
+              <strong>Plastic-Free</strong>
+              <small>100% Recyclable Packaging</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=700&q=80" alt="Lush Indoor Plant" class="hero-img">
+            <div class="floating-badge">
+              <span>🌿 Editor's Choice</span>
+              <strong>Monstera Deliciosa</strong>
+              <small>Special $34.00</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Perks Section -->
+  <section class="perks">
+    <div class="container perks-grid">
+      <div class="perk-card">
+        <div class="perk-icon">🚚</div>
+        <div>
+          <h4>Carbon-Neutral Shipping</h4>
+          <p>Free standard delivery on orders over $45</p>
+        </div>
+      </div>
+      <div class="perk-card">
+        <div class="perk-icon">💚</div>
+        <div>
+          <h4>30-Day Plant Guarantee</h4>
+          <p>Arrives healthy or we replace it for free</p>
+        </div>
+      </div>
+      <div class="perk-card">
+        <div class="perk-icon">🌱</div>
+        <div>
+          <h4>Ethically Sourced</h4>
+          <p>Partnering with certified sustainable growers</p>
+        </div>
+      </div>
+      <div class="perk-card">
+        <div class="perk-icon">💬</div>
+        <div>
+          <h4>Plant Doctor Care</h4>
+          <p>Free care guides & 24/7 expert advice</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="shop">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Curated Catalog</span>
+        <h2 class="section-title">Explore Our Bestsellers</h2>
+        <p class="section-subtitle">Freshly stocked botanicals, organic teas, and plastic-free home essentials.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs" id="filter-tabs">
+        <button class="filter-btn active" data-category="all">All Items</button>
+        <button class="filter-btn" data-category="plants">Indoor Plants</button>
+        <button class="filter-btn" data-category="decor">Home & Pots</button>
+        <button class="filter-btn" data-category="teas">Organic Teas</button>
+        <button class="filter-btn" data-category="eco">Zero Waste</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Mission / Banner -->
+  <section id="about" class="mission">
+    <div class="container mission-box">
+      <div class="mission-text">
+        <span class="badge-pill">Our Green Pledge</span>
+        <h2>For every order placed, we plant one tree.</h2>
+        <p>
+          We believe commerce can be a force for reforestation. Through our partnership with global reforestation nonprofits, each purchase directly funds mangrove and forest restoration projects worldwide.
+        </p>
+        <div class="mission-stats">
+          <div>
+            <h3>24,850+</h3>
+            <p>Trees Planted</p>
+          </div>
+          <div>
+            <h3>100%</h3>
+            <p>Compostable Liners</p>
+          </div>
+          <div>
+            <h3>0%</h3>
+            <p>Single-Use Plastics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container newsletter-content">
+      <span class="newsletter-icon">💌</span>
+      <h2>Join the Green Living Circle</h2>
+      <p>Subscribe for seasonal botanical tips, member discounts, and exclusive restock alerts.</p>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <div id="newsletter-feedback" class="newsletter-feedback"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Have a question about your order?</h2>
+        <p>Our customer care team and resident plant specialists are here to assist with any questions.</p>
+        <div class="contact-items">
+          <p>📍 <strong>Store & Greenhouse:</strong> 742 Evergreen Way, Eco District</p>
+          <p>✉️ <strong>Email:</strong> support@verdantstudio.com</p>
+          <p>📞 <strong>Phone:</strong> +1 (800) 456-VERD</p>
+          <p>⏰ <strong>Hours:</strong> Mon - Sat: 9:00 AM - 6:00 PM EST</p>
+        </div>
+      </div>
+
+      <form id="contact-form" class="contact-form">
+        <h3>Send us a message</h3>
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" placeholder="Sarah Jenkins" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" placeholder="sarah@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" rows="4" placeholder="I have a question about plant care..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <div id="contact-feedback" class="form-feedback"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Shopping Cart Slide-out Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>Your Green Cart (<span id="cart-header-count">0</span>)</h3>
+      <button id="cart-close" class="btn-close" aria-label="Close cart">✕</button>
+    </div>
+
+    <!-- Free Shipping Meter -->
+    <div class="shipping-meter-box">
+      <div class="meter-text" id="shipping-text">Add $45.00 more for Free Shipping!</div>
+      <div class="meter-bar">
+        <div class="meter-fill" id="shipping-meter-fill"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items List -->
+    <div class="cart-items" id="cart-items">
+      <!-- Items dynamically injected -->
+    </div>
+
+    <!-- Cart Footer & Checkout -->
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal</span>
+        <strong id="cart-subtotal">$0.00</strong>
+      </div>
+      <p class="cart-tax-notice">Taxes and carbon-neutral shipping calculated at checkout.</p>
+      <button id="checkout-btn" class="btn btn-primary btn-block btn-checkout">Proceed to Checkout</button>
+      <button id="clear-cart-btn" class="btn-clear-cart">Clear Cart</button>
+    </div>
+  </aside>
+
+  <!-- Checkout Confirmation Modal -->
+  <div class="modal-backdrop" id="checkout-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-check-icon">✅</span>
+        <h3>Thank You for Shopping Green!</h3>
+      </div>
+      <p class="modal-body">
+        Your mock order has been placed. We've sent a confirmation receipt to your email, and <strong>1 tree</strong> has officially been scheduled for planting!
+      </p>
+      <div class="modal-details" id="order-summary-box"></div>
+      <button id="modal-close-btn" class="btn btn-primary btn-block">Continue Shopping</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-leaf">🌱</span>
+          <span class="logo-text">Verdant<span class="logo-dot">.</span></span>
+        </a>
+        <p>Curated botanical decor, thriving indoor plants, and certified eco-living products crafted with earth-first materials.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Shop Categories</h4>
+        <ul>
+          <li><a href="#shop">Indoor Plants</a></li>
+          <li><a href="#shop">Ceramic Planters</a></li>
+          <li><a href="#shop">Botanical Teas</a></li>
+          <li><a href="#shop">Zero Waste Essentials</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Help & Support</h4>
+        <ul>
+          <li><a href="#about">Plant Care Guide</a></li>
+          <li><a href="#contact">Shipping & Returns</a></li>
+          <li><a href="#about">Our 30-Day Guarantee</a></li>
+          <li><a href="#contact">Contact Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Sustainability</h4>
+        <ul>
+          <li><a href="#about">One Tree Planted</a></li>
+          <li><a href="#about">Eco Packaging</a></li>
+          <li><a href="#about">Carbon Offset Report</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year"></span> Verdant Eco Studio. All rights reserved.</p>
+      <div class="payment-badges">
+        <span>🔒 Secure SSL Checkout</span>
+        <span>💳 Visa</span>
+        <span>💳 Mastercard</span>
+        <span>🌿 Apple Pay</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
